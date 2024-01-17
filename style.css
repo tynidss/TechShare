@@ -1,0 +1,623 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&family=Roboto&display=swap');
+
+
+
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:800;
+  font-size:45px;
+
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight:700;
+  letter-spacing: 2px;
+  font-size:30px;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight:700;
+  letter-spacing: 2px;
+  font-size:35px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.nav-bar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin: 0px 10px;
+    background-color: rgb(15, 136, 197);
+    border: 2px;
+    border-radius: 17px;
+    transition-duration: 300ms;
+}
+
+.nav-item:hover{
+    color: #ffffff;
+    padding: 10px 30px;
+    margin: 0px 10px;
+    background-color: rgb(111, 88, 202);
+    border-radius: 13px;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-sticky {
+    position: sticky;
+    top: 0; /* Définissez la distance par rapport au haut de la page à laquelle l'élément doit devenir sticky */
+    z-index: 100; /* Réglez ceci en fonction de vos besoins pour gérer le niveau de superposition par rapport aux autres éléments */
+    background-color: #ffffff;
+    height: 140px;
+  }
+
+
+  .logo_navbar{
+    width: 143px;
+    margin-right: 50px;
+  }
+
+  .page_navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+  .section-1{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    display: flex;
+  }
+
+  .col-sec1{
+    width: 40%;
+  }
+  .col-sec1{
+    width: 70%;
+  }
+
+  .text-section-1{
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+
+
+.footer{
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+
+}
+
+  
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff; /* Couleur du texte blanc */
+  padding: 20px 50px;
+}
+.footer-container2 {
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff; /* Couleur du texte blanc */
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+footer h3 {
+  border-bottom: 2px solid #ffffff; /* Bordure blanche sous les titres */
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  max-width: 30%;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+footer p {
+  margin: 5px 0;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+
+a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur du texte blanc pour les liens */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link_footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.logolink_footer{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+/* this card is inspired form this - https://georgefrancis.dev/ */
+.menu-article{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.add-btn{
+  padding: 10px 20px;
+
+
+}
+
+.section-article{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.unserpp{
+  border-radius: 50%;
+  background-color: white;
+  width: 30px;
+  margin-right: 10px; 
+}
+
+.card__user{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card {
+  --border-radius: 0.75rem;
+  --primary-color: #7257fa;
+  --secondary-color: #3c3852;
+  width: 70%;
+  font-family: "Arial";
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: #e5e1e1;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+  position: relative;
+  transition-duration: 300ms;
+}
+
+.card > * + * {
+  margin-top: 1.1em;
+}
+
+.card .card__content {
+  color: var(--secondary-color);
+  font-size: 0.86rem;
+}
+
+.card .card__title {
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition-duration: 300ms;
+}
+
+.card .card__date {
+  color: #6e6b80;
+  font-size: 0.8rem;
+}
+
+.card .card__arrow {
+  position: absolute;
+  background: var(--primary-color);
+  padding: 0.4rem;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  bottom: 0;
+  right: 0;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card svg {
+  transition: 0.2s;
+}
+
+/* hover */
+.card:hover .card__title {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition-duration: 300ms;
+}
+
+.card:hover .card__arrow {
+  background: #111;
+  transition-duration: 300ms;
+}
+
+.card:hover  {
+  background: #eaeaea;
+  transition-duration: 300ms;
+}
+
+.card:hover .card__arrow svg {
+  transform: translateX(3px);
+  transition-duration: 300ms;
+}
+
+.titlearticle{
+  margin: auto;
+  width: 70%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #9b9b9b;
+}
+
+.button {
+  --width: 130px;
+  --height: 40px;
+  --tooltip-height: 35px;
+  --tooltip-width: 120px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #1163ff;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+  white-space: nowrap;
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #6c18ff;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+  
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 400px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+  margin-left: 30px;
+  border: 2px solid #dadada;
+  border-radius: 20px;
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.nav-log{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 30px;
+  margin: 0px 10px;
+  background-color: rgb(111, 88, 202);
+  border: 2px;
+  border-radius: 17px;
+  transition-duration: 300ms;
+}
+
+.nav-log:hover{
+  color: #ffffff;
+  padding: 10px 30px;
+  margin: 0px 10px;
+  background-color: rgb(15, 136, 197);
+  border-radius: 13px;
+  
+}
